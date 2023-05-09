@@ -1,0 +1,345 @@
+
+body { 
+    margin: 0; 
+    background-color: #000000; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    
+} 
+.logo{ /* gestisce le proprietà del logo Aroruals */
+    text-align: left; /* testo allineato a sinistra */
+    height:30px; /* a quale altezza si trova il logo rispetto alla barra viola della testata? */
+    color:#ffffff;
+    margin:10px; /* distanza dal bordo della pagina */
+    font-family: 'Kalam', cursive;
+}
+.container{
+    width:100%;
+    min-height:25%; /* con questo ho messo al centro della barra viola la barra di ricerca */
+    display: flex;
+    align-items: center;
+    justify-content:right;
+padding: 0px 0px;
+margin-top:20px;
+
+
+    }
+    .search-bar{ /* caratteristiche del rettangolo della barra di ricerca */
+        width:17%; /* lunghezza barra trasparente */
+        max-width: 400px; 
+        background:#663366;
+        display: flex;
+        align-items: right; /* allineamento testo "search anything" a destra */
+        border-radius: 60px;
+        padding: 10px 10px; /* lunghezza e larghezza del rettangolo */
+        backdrop-filter: blur(4px) saturate(180%);
+        margin-left: 50%; /* barra spostata a destra */
+        box-shadow: none;
+        height:30px;      
+    }
+    
+    .search-bar input{
+        background:transparent; /* era trasparente */
+        flex: 1;
+        border: 0;
+        outline: none;
+        align-items: right;
+        font-size: 18px;
+        color: #cac7ff;
+        
+        
+    }
+    ::placeholder{ /* colore e size della scritta search anything */
+        color:whitesmoke;
+        size:5px;
+    }
+    .search-bar button img{ /*immagine cerca */
+        width:20px;   
+    }
+    .search-bar button{ /* caratteristiche png cerca */
+        border:0;
+        border-radius: 50%;
+        width:40px;
+        height:40px;
+        background:transparent;
+        cursor:pointer;
+     
+        
+    }
+img { 
+    max-width: 100%; 
+    height: auto; /* serve a eliminare il margin-bottom che le immagini hanno di default */ 
+    
+  
+} 
+
+main{ 
+    max-width: 1200px; 
+    margin: auto; 
+    padding: 20px;
+    margin-top: 0%;
+}  
+
+section.hero {  /* titolo Illustrations */
+    text-align: center; 
+   
+} 
+
+section.hero h1 { /* caratteristiche titolo Illustrations */
+    margin: 0; 
+    padding: 40px 10px; 
+    font-size: 50px; 
+    color: rgba(255,255,255,0.9); 
+} 
+
+main { 
+    margin: 40px auto; /* distanza tra le foto e il titolo */
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 113px; /* larghezza del contenitore bianco delle foto */
+ 
+
+} 
+
+main div.card { /* colore del contenitore delle fotografie */
+    background:#663366;
+} 
+
+main div.card img { /* caratteristiche fotografie */
+    border-radius: 0%;
+    height: 545px; /* lunghezza immagini (prima era 841) */
+    width: 324px; /* larghezza immagini */
+    text-align: center; 
+   
+} 
+
+main div img {
+    border-radius: 10px; 
+}
+
+
+main div.card h2 { /* caratteristiche dei nomi degli illustratori */
+    margin: 0; 
+    padding: 20px 20px 1px 20px; 
+    font-size: 30px; 
+    text-align: center; /* testo nomi illustratori centrato */
+    color:whitesmoke; /* colore nomi illustratori */
+    text-decoration: none;
+} 
+main div.card h2:hover{ /* con questo se vado sui nomi degli illustratori diventano da bianchi arancioni */
+    color: orange;
+}
+main div.gallery { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap:20px; 
+} 
+
+
+
+.navbar ul{ /* caratteristiche della barra della navigazione */
+    list-style:none;
+    background:#663366;
+    padding:20px; /* larghezza barra */
+    margin:0; /* distanza barra dall'inizio della pagina */
+    text-align: center;
+}
+.navbar li{ /* come devono essere allineati i tool della header? */
+    display: inline-block;
+    
+}
+
+
+.navbar a{ /* gestisce esattamente le voci della testata: contacts, about us ...*/
+    text-decoration: none;
+    color:#fff;
+    width:80px; /*distanza tra le voci della testata */
+display:block;
+padding: 20px 20px;
+font-size:15px;
+text-transform:uppercase;
+font-weight: bold;
+text-align: center;
+
+}
+.navbar a:hover{ /* quando con il mouse tocco i tool della testata il quadrato diventa arancione */
+    background:orange;
+}
+
+a{ /* fa sparire l'underline dei link dei nomi degli illustratori */
+    text-decoration: none;
+}
+
+
+footer{
+    margin-top:200px; /* distanza dalle foto */
+    background:#663366;
+    height:330px;
+}
+footer p{ /* GESTISCE IL NOME NEL FOOTER ARORUALS  */
+   color:white;
+    text-align: left;
+    padding:10px;
+    font-size:50px;
+    font-family: 'Kalam', cursive; 
+    
+}
+.cookie{ /* GESTISCE IL TESTO SOTTO DI ARORUALS */
+    color:white;
+    text-align: left;
+   padding:10px;
+    font-size:12px;
+    font-family:'Times New Roman', Times, serif;
+    margin-top:-90px;
+}
+.privacy{ /* GESTISCE IL TESTO SOTTO SITE BY ARORUALS */
+    color:white;
+    padding:10px;
+    font-size:14px;
+    font-family:'Times New Roman', Times, serif;
+margin-top:-40px;
+}
+.informazioni{ /* GESTISCE IL NOME COMMERCIAL */
+    color:white;
+    text-align: center;
+    list-style: none;
+    font-weight: bold;
+    margin-top:-100px;
+}
+
+.information{ /* gestisce casella di testo di commercial */
+    color:white;
+    text-align: left;
+    list-style: none; /* leva i pallini del <li> */
+   line-height: 2.0; /* interlinea di testo tra una riga e un'altra */
+    margin-top:20px; /* a quale altezza si trova la casella di testo rispetto al footer? */
+    margin-left:47%; /* a quale disanza si trova la casella di testo rispetto al lato sinistro del sito? */
+}
+.informazioni2{ /* GESTISCE IL NOME ABOUT US */
+    color:white;
+    text-align: center;
+    list-style: none;
+    font-weight: bold;
+    margin-top:-170px; /* altezza */
+    margin-left:40%; /* distanza da sx */
+}
+
+
+.information2{ /* gestisce casella di testo di about us */
+    color:white;
+    text-align: left;
+    list-style: none; /* leva i pallini del <li> */
+   line-height: 2.0; /* interlinea di testo tra una riga e un'altra */
+    margin-top:20px; /* a quale altezza si trova la casella di testo rispetto al footer? */
+    margin-left:68%; /* a quale disanza si trova la casella di testo rispetto al lato sinistro del sito? */
+}
+.informazioni3{ /* GESTISCE IL NOME WORK WITH US */
+    color:white;
+    text-align: center;
+    list-style: none;
+    font-weight: bold;
+    margin-top:-170px; /* altezza */
+    margin-left:80%; /* distanza da sx */
+}
+
+.information3{ /* gestisce casella di testo di work with us */
+    color:white;
+    text-align: left;
+    list-style: none; /* leva i pallini del <li> */
+   line-height: 2.0; /* interlinea di testo tra una riga e un'altra */
+    margin-top:20px; /* a quale altezza si trova la casella di testo rispetto al footer? */
+    margin-left:87%; /* a quale disanza si trova la casella di testo rispetto al lato sinistro del sito? */
+}
+footer hr{  /* linea bianca footer */
+    margin-top:50px;
+}
+/* CON QUESTI TRE COMANDI, QUANDO VADO CON IL MOUSE SOPRA COMMERCIAL, ABOUT US E WORK WITH US, IL TESTO DIVENTA ARANCIONE */
+.informazioni:hover{
+    color:orange;
+}
+.informazioni2:hover{
+    color:orange;
+}
+.informazioni3:hover{
+    color:orange;
+}
+
+/* PAGINA DI LA BOCA */
+
+.titolo{ /* gestisce il nome la boca */    
+    color:orange;
+    text-align: center;
+    font-size: 50px;
+}
+
+.testo{
+    /* gestisce paragrafo di testo */
+        color:white;
+        font-family:'Times New Roman', Times, serif;
+        font-size:20px;
+        width:80%;
+     overflow-wrap:break-word;
+     padding:10px;
+     margin:60px; 
+          margin-top:30px; /* distanza del testo di descrizione dalla foto */
+
+    }
+    .other{ /* gestisce il titolo other illustrations */
+        text-align: center;
+        color:white;
+        margin-top:150px;
+        font-size:40px;
+        font-weight: bold;
+        margin-top:200px;
+    }
+
+   
+.fotografie{
+    width:40%;
+    height:40%;
+    display:inline-flex;
+}
+ /*CSS DELLA PAGINA DI TIM LAHAN */
+
+.lim{
+    max-width: 80%;
+}
+.other1{
+    text-align: center;
+    color:white;
+    margin-top:150px;
+    font-size:40px;
+    font-weight: bold;
+    margin-top:390px;
+}
+
+
+/*CSS DELLA PAGINA ABOUT US */
+.chisiamo{
+    color:white;
+    font-family:'Times New Roman', Times, serif;
+    font-size:20px;
+    width:40%;
+ overflow-wrap:break-word;
+ padding:10px;
+ margin:60px;
+margin-left:30%;
+}
+.chisiamo img{
+    max-width: 70%;
+    margin-left: 15%;
+    margin-top:20px;
+
+    border-style:groove;
+    border-color: orange;
+}
+.chisiamo hr{
+    margin-top:20px;
+    border-color:whitesmoke;
+}
+
+
+ 
+
+   
+
+  
